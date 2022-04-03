@@ -51,14 +51,14 @@
       </section>
       <section class="feedback">
         <div class="feedback__form-header">
-          <h1 class="feedback__title">Оставьте свой отзыв</h1>
+          <h2 class="feedback__title">Оставьте свой отзыв</h2>
           <p class="feedback__text">
             Помогите нашим отелям стать лучше!
             Оставьте отзыв о них, а также о
             посещенных вами достопримечательностях
           </p>
         </div>
-        <div class="feedback__wrapper">
+        <form class="feedback" action="https://echo.htmlacademy.ru" method="get">
           <div class="feedback__personal-data">
             <div class="feedback__personal-data feedback__personal-data--name">
               <fieldset class="name">
@@ -75,22 +75,92 @@
                </fieldset>
             </div>
             <div class="feedback__personal-data feedback__personal-data--contacts">
-
+              <fieldset class="contacts">
+                <legend class="contacts__title">Контактная информация:</legend>
+                <label class="contacts__label" for="phone-number">
+                  Контактный телефон*:
+                </label>
+                  <input class="contacts__field" placeholder="Введите телефон" type="tel" name="phone-number" id="phone-number" required>
+                <label class="contacts__label" for="e-mail">
+                  Электронная почта*:
+                </label>
+                  <input class="contacts__field" placeholder="Введите e-mail" type="text" name="e-mail" id="e-mail" required="required">
+              </fieldset>
             </div>
           </div>
           <div class="feedback__personal-data feedback__personal-data--personal-impression">
+            <fieldset class="personal-impression">
+              <legend class="personal-impression__title">Ваше общее впечатление:</legend>
+              <ul class="personal-impression__list">
+                <li class="personal-impression__item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="impression-group" value="rather-positiv" checked>
+
+                    Скорее положительное
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="impression-group" value="rather-negative">
+
+                    Скорее отрицательное
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="impression-group" value="difficult-answer">
+
+                    Затрудняюсь ответить
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
           </div>
           <div class="feedback__personal-data feedback__personal-data--visited-attractions">
+            <fieldset class="visited-attractions">
+              <legend class="visited-attractions__title">Посещенные достопримечательности:</legend>
+              <ul class="visited-attractions__list">
+                <li class="visited-attractions__item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="visited-attractions-group" checked>
 
+                    Мост Дьявола
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="visited-attractions-group" checked>
+
+                    Гора-Колокол
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="visited-attractions-group" checked>
+
+                    Слайд-парк
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="visited-attractions-group">
+
+                    Красные скалы
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
           <div class="feedback__personal-data feedback__personal-data--describe-emotions">
-
+            <fieldset class="describe-emotions">
+              <legend class="describe-emotions__title">Опишите свои эмоции:</legend>
+              <textarea id="describe-emotions" name="describe-emotions"></textarea>
+            </fieldset>
           </div>
-        </div>
-
-
-
+          <button class="feedback__personal-data__button">Отправить отзыв</button>
+          <p class="feedback__detail">* - обязательные поля</p>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
