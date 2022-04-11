@@ -31,7 +31,6 @@
 .benefit__list--simple--list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   padding-top: 23px;
   padding-bottom: 52px;
   color: #333333;
@@ -39,29 +38,46 @@
   list-style-type: none;
 }
 
-.benefit__item--house {
-  background-image: url('./img/icon-house.svg');
-  background-color: #ffffff;
+// .benefit__item--house {
+//   position: relative;
+// }
+
+.benefit__item--house::before {
+  content: "";
+  // position: absolute;
+  display: block;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
   width: 40px;
   height: 40px;
 }
 
-.benefit__item--food {
-  color: #333333;
-  background-color: #ffffff;
+.benefit__item--food::before {
+  content: "";
+  display: block;
+  background-image: url("../img/icon-food.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
 }
 
-.benefit__item--souvenir {
-  color: #333333;
-  background-color: #ffffff;
+.benefit__item--souvenir::before {
+  content: "";
+  display: block;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
 }
 
-.benefit-title {
+.benefit-title,
+.benefit-title-2 {
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  color: #000000;
 }
 
 .benefit__description,
