@@ -64,13 +64,13 @@
               <fieldset class="name">
                 <legend class="name__title">Представьтесь:</legend>
                 <label class="name__first-name">Имя*:
-                  <input type="text" required>
+                  <input class="name__text" type="text" value="Пётр" required>
                 </label>
                 <label class="name__second-name">Фамилия*:
-                  <input type="text" required>
+                  <input class="name__text" type="text" value="Пустота" required>
                 </label>
                 <label class="name__patronymic">Отчество:
-                  <input type="text">
+                  <input class="name__text" type="text" value="Викторович">
                 </label>
               </fieldset>
             </div>
@@ -80,11 +80,15 @@
                 <label class="contacts__label" for="phone-number">
                   Контактный телефон*:
                 </label>
+                <div class="contacts__icon contacts__icon_phone">
                   <input class="contacts__field" placeholder="Введите телефон" type="tel" name="phone-number" id="phone-number" required>
+                </div>
                 <label class="contacts__label" for="email">
                   Электронная почта*:
                 </label>
+                <div class="contacts__icon contacts__icon_email">
                   <input class="contacts__field" placeholder="Введите e-mail" type="email" name="email" id="email" required="required">
+                </div>
               </fieldset>
             </div>
           </div>
@@ -99,14 +103,14 @@
                     Скорее положительное
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="personal-impression__item">
                   <label class="control">
                     <input class="control-input" type="radio" name="impression-group" value="rather-negative">
 
                     Скорее отрицательное
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="personal-impression__item">
                   <label class="control">
                     <input class="control-input" type="radio" name="impression-group" value="difficult-answer">
 
@@ -128,21 +132,21 @@
                     Мост Дьявола
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="visited-attractions__item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="visited-attractions-group" checked>
 
                     Гора-Колокол
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="visited-attractions__item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="visited-attractions-group" checked>
 
                     Слайд-парк
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="visited-attractions__item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="visited-attractions-group">
 
@@ -155,7 +159,7 @@
           <div class="feedback__personal-data feedback__personal-data--describe-emotions">
             <fieldset class="describe-emotions">
               <legend class="describe-emotions__title">Опишите свои эмоции:</legend>
-              <textarea id="describe-emotions" name="describe-emotions"></textarea>
+              <textarea class="describe-emotions__field" id="describe-emotions" name="describe-emotions"></textarea>
             </fieldset>
           </div>
           <button class="feedback__personal-data__button">Отправить отзыв</button>

@@ -1,6 +1,11 @@
 .feedback {
-  // padding-left: 20px;
-  // padding-right: 20px;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .feedback__form-header {
@@ -24,19 +29,45 @@
   margin: 0;
   padding: 0;
   padding-bottom: 28px;
-  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
   width: 306px;
 }
 
 .feedback__form {
-  padding-left: 20px;
-  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.feedback__personal-data {
+  box-sizing: border-box;
+}
+
+.name {
+  padding: 0;
+  padding-bottom: 63px;
+  border: none;
+}
+
+.name__first-name,
+.name__second-name,
+.name__patronymic {
+  outline: none;
+  display: block;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.name__text {
+  display: block;
+  padding-left: 16px;
+  width: 296px;
+  height: 58px;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #f2f2f2;
+  color: #000000;
+  border: none;
 }
 
 .name__title {
@@ -45,4 +76,152 @@
   line-height: 26px;
   text-align: center;
   padding-bottom: 20px;
+}
+
+.contacts {
+  box-sizing: border-box;
+  padding: 0;
+  margin-bottom: 18px;
+  border: none;
+}
+
+.contacts__label {
+  text-align: left;
+}
+
+.contacts__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.contacts__field {
+  display: block;
+  width: 296px;
+  height: 58px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 16px;
+}
+
+.contacts__icon {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.contacts__icon::after {
+  content: "";
+  background-color: #e6e6e6;
+  align-items: center;
+}
+
+.contacts__icon_phone::after {
+  content: "";
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 58px;
+  height: 58px;
+}
+
+.personal-impression {
+  padding: 0;
+  padding-bottom: 49px;
+  border: none;
+}
+
+.personal-impression__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 20px;
+}
+
+.personal-impression__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.personal-impression__item {
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.visited-attractions {
+  border: none;
+}
+
+.visited-attractions__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 20px;
+}
+
+.visited-attractions__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 49px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.describe-emotions {
+  border: none;
+}
+
+.feedback__personal-data--describe-emotions {
+  padding-bottom: 56px;
+}
+
+.describe-emotions__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-bottom: 20px;
+}
+
+.describe-emotions__field {
+  background-color: #f2f2f2;
+  width: 279px;
+  height: 150px;
+  border: none;
+}
+
+.feedback__personal-data__button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 16px 37px;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+}
+
+.feedback__detail {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
+  padding-left: 125px;
 }
