@@ -1,14 +1,14 @@
 @font-face {
-  font-weight: normal;
   font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-style: normal;
-  src: url("/source/fonts/ptsans.woff2") format("woff2"), url("/source/fonts/ptsans.woff") format("woff");
+  font-weight: 400;
 }
 @font-face {
-  font-weight: bold;
   font-family: "PT Sans";
-  font-style: bold;
-  src: url("/source/fonts/ptsansbold.woff2") format("woff2"), url("/source/fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
 }
 .page__body {
   display: flex;
@@ -148,7 +148,7 @@
   background-color: #81b3d2;
 }
 .benefit__item--text {
-  padding: 26px 26px 24px 26px;
+  padding: 24px 26px 24px 26px;
   color: #333333;
   background-color: #d6d6d650;
 }
@@ -156,7 +156,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 23px;
-  padding-bottom: 52px;
+  padding-bottom: 30px;
   color: #333333;
   background-color: #ffffff;
   list-style-type: none;
@@ -201,6 +201,12 @@
 .benefit__title-2 {
   margin: 0;
   padding: 0;
+  text-align: left;
+  margin-left: 47px;
+}
+.benefit-title {
+  margin: 0;
+  padding-bottom: 15px;
 }
 .benefit__description,
 .benefti__description-2,
@@ -213,13 +219,24 @@
 }
 .benefit__description {
   margin: 0;
-  padding-bottom: 40px;
-  padding-top: 17px;
+  padding-top: 15px;
+}
+.benefit__description-1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  color: #ffffff;
 }
 .benefit__description-2 {
   margin: 0;
   padding-top: 16px;
   padding-bottom: 22px;
+  text-align: left;
+  margin-left: 47px;
 }
 .find {
   padding: 39px 18px 49px 18px;
@@ -286,6 +303,7 @@
 }
 .hashtag__site {
   text-decoration: none;
+  color: #000000;
 }
 .main-footer__social {
   margin: 0;
@@ -653,5 +671,12 @@
   line-height: 21px;
   text-align: center;
   padding-bottom: 38px;
+}
+.block-photo__number-like {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
