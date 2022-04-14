@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html class="form" lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Форма</title>
   </head>
-  <body class="form__body">
+  <body class="page__body">
     <header class="main-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list-one">
             <li class="site-list-one__item site-list-one__item--current">
@@ -17,7 +17,7 @@
             </li>
             <li class="site-list-one__item">
               <a href="photo.html">
-                Фото и Видео
+                Фото И Видео
               </a>
             </li>
           </ul>
@@ -37,6 +37,7 @@
             </li>
           </ul>
         </div>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
     </header>
     <main class="form-container">
@@ -52,26 +53,26 @@
         <div class="feedback__form-header">
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
           <p class="feedback__text">
-            Помогите нашим отелям стать лучше!
-            Оставьте отзыв о них, а также о
+            Помогите нашим отелям стать лучше!<br>
+            Оставьте отзыв о них, а также о<br>
             посещенных вами достопримечательностях
           </p>
         </div>
-        <form class="feedback" action="https://echo.htmlacademy.ru" method="get">
+        <form class="feedback__form" action="https://echo.htmlacademy.ru" method="get">
           <div class="feedback__personal-data">
             <div class="feedback__personal-data feedback__personal-data--name">
               <fieldset class="name">
                 <legend class="name__title">Представьтесь:</legend>
                 <label class="name__first-name">Имя*:
-                  <input type="text" required>
+                  <input class="name__text" type="text" value="Пётр" required>
                 </label>
                 <label class="name__second-name">Фамилия*:
-                  <input type="text" required>
+                  <input class="name__text" type="text" value="Пустота" required>
                 </label>
                 <label class="name__patronymic">Отчество:
-                  <input type="text">
+                  <input class="name__text" type="text" value="Викторович">
                 </label>
-               </fieldset>
+              </fieldset>
             </div>
             <div class="feedback__personal-data feedback__personal-data--contacts">
               <fieldset class="contacts">
@@ -79,11 +80,15 @@
                 <label class="contacts__label" for="phone-number">
                   Контактный телефон*:
                 </label>
+                <div class="contacts__icon contacts__icon_phone">
                   <input class="contacts__field" placeholder="Введите телефон" type="tel" name="phone-number" id="phone-number" required>
+                </div>
                 <label class="contacts__label" for="email">
                   Электронная почта*:
                 </label>
+                <div class="contacts__icon contacts__icon_email">
                   <input class="contacts__field" placeholder="Введите e-mail" type="email" name="email" id="email" required="required">
+                </div>
               </fieldset>
             </div>
           </div>
@@ -98,14 +103,14 @@
                     Скорее положительное
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="personal-impression__item">
                   <label class="control">
                     <input class="control-input" type="radio" name="impression-group" value="rather-negative">
 
                     Скорее отрицательное
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="personal-impression__item">
                   <label class="control">
                     <input class="control-input" type="radio" name="impression-group" value="difficult-answer">
 
@@ -127,21 +132,21 @@
                     Мост Дьявола
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="visited-attractions__item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="visited-attractions-group" checked>
 
                     Гора-Колокол
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="visited-attractions__item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="visited-attractions-group" checked>
 
                     Слайд-парк
                   </label>
                 </li>
-                <li class="catalog-filter-item">
+                <li class="visited-attractions__item">
                   <label class="control">
                     <input class="control-input" type="checkbox" name="visited-attractions-group">
 
@@ -154,7 +159,7 @@
           <div class="feedback__personal-data feedback__personal-data--describe-emotions">
             <fieldset class="describe-emotions">
               <legend class="describe-emotions__title">Опишите свои эмоции:</legend>
-              <textarea id="describe-emotions" name="describe-emotions"></textarea>
+              <textarea class="describe-emotions__field" id="describe-emotions" name="describe-emotions"></textarea>
             </fieldset>
           </div>
           <button class="feedback__personal-data__button">Отправить отзыв</button>
@@ -182,8 +187,11 @@
         </div>
         <div class="main-footer__development development">
           <p class="development__text">Разработано
-            <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
           </p>
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="#000"/>
+          </svg>
         </div>
       </div>
     </footer>
